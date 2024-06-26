@@ -32,8 +32,8 @@ const App = () => {
   }, [length, numberAllow, charAllow, passGenerator]);
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen w-full bg-slate-900 text-slate-200">
-      <div className="px-10 py-5 rounded-lg bg-slate-400 text-slate-900">
+    <div className="flex flex-col justify-center items-center h-screen w-full bg-slate-900 text-slate-200 md:flex-row md:justify-center md:items-center">
+      <div className="px-10 py-5 rounded-lg bg-slate-400 text-slate-900 md:w-1/2 md:p-4">
         <h1 className="mb-5 text-center text-3xl">Password Generator</h1>
         <div className="flex mb-4 justify-center rounded-xl overflow-hidden">
           <input
@@ -51,7 +51,7 @@ const App = () => {
             copy
           </button>
         </div>
-        <div className="flex text-sm gap-x-2">
+        <div className="flex text-sm gap-x-2 md:flex-col md:gap-y-4">
           <div className="flex item-center gap-x-1">
             <input
               type="range"
@@ -62,7 +62,7 @@ const App = () => {
               className="cursor-pointer"
             />
             <label htmlFor="" className="text-lg">
-              Label: {length}
+              Length: {length}
             </label>
           </div>
 
